@@ -15,7 +15,6 @@ public class DragAndDrop {
 		Actions actions = new Actions(driver);
 		actions.dragAndDrop(image,box).build().perform();
 		Thread.sleep(1000);
-		
 	}
 	
 }
