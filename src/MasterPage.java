@@ -41,10 +41,8 @@ public class MasterPage {
 		driver.findElement(By.cssSelector("a#logo")).click();
 		
 		//NAVIGATE TO DRAG AND DROP
-		driver.findElement(By.xpath("/html/body/div/div/li[5]/a")).click();
-		wait.until(ExpectedConditions.urlToBe("https://formy-project.herokuapp.com/dragdrop"));
+		driver.get("https://formy-project.herokuapp.com/dragdrop");
 		
-
 		DragAndDrop dragAndDrop = new DragAndDrop();
 		dragAndDrop.dragimage(driver);
 		
